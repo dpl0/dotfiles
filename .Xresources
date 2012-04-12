@@ -1,0 +1,264 @@
+! Xresources -----------------------------------------------------------------
+
+! urxvt------------------------------------------------------------------------ 
+URxvt*termname:			rxvt-256color
+URxvt*scrollBar:		true
+URxvt*scrollstyle:		plain
+URxvt*scrollColor:		#404040
+URxvt*font:				-*-terminus-*-*-*-*-12-*-*-*-*-*-iso8859-15
+URxvt*boldFont:			-*-terminus-*-*-*-*-12-*-*-*-*-*-iso8859-15
+!URxvt*font:			xft:Inconsolata:style=Medium:pixelsize=13
+!URxvt*boldFont:		xft:Inconsolata:style=Medium:pixelsize=13
+
+!Italic, Bold, Underlined
+!Green
+URxvt.colorIT:			#A8FF60 
+URxvt.colorBD:			#A8FF60
+!Blue
+URxvt.colorUL:			#96CBFE
+URxvt*cursorColor:		#C1521A
+URxvt*background:		#000000
+URxvt*foreground:		#EEEEEE
+
+URxvt.borderless:		true
+URxvt*transparent:		true
+URxvt*tintColor:		white
+URxvt.shading:			10
+
+!Gutterslob colors
+!black - 474747
+!URxvt*color0:  #000000 
+!URxvt*color8:  #606060
+!red
+!URxvt*color1:  #A06760
+!URxvt*color9:  #CC928D
+!green
+!URxvt*color2:  #60A067 
+!URxvt*color10: #8DCC92
+!yellow
+!URxvt*color3:  #A08760
+!URxvt*color11: #CCB28D
+!blue 
+!URxvt*color4:  #607AA1
+!URxvt*color12: #8DA7CC
+!magenta
+!URxvt*color5:  #A1619A
+!URxvt*color13: #C983C1
+!cyan
+!URxvt*color6:  #559DA1
+!URxvt*color14: #7EC6CA
+!white
+!URxvt*color7:  #A2A2A2
+!URxvt*color15: #CDCDCD
+
+!Foregound/Background
+!URxvt*foreground: #A2A2A2
+!URxvt*background: #000000
+
+!IR_Black
+!Black
+URxvt*color0:	#4E4E4E
+URxvt*color8:	#7C7C7C
+!Red
+URxvt*color1:	#FF6C60
+URxvt*color9:	#FFB6B0
+!Green
+URxvt*color2:	#A8FF60
+URxvt*color10:	#CEFFAB
+!Yellow
+URxvt*color3:	#FFFFB6
+URxvt*color11:	#FFFFCB
+!Blue
+URxvt*color4:	#96CBFE
+URxvt*color12:	#B5DCFE
+!Magenta
+URxvt*color5:	#FF73FD
+URxvt*color13:	#FF9CFE
+!Cyan
+URxvt*color6:	#C6C5FE
+URxvt*color14:	#DFDFFE
+!White
+URxvt*color7:	#EEEEEE
+URxvt*color15:	#FFFFFF
+
+
+! -- Gutterslob greenie colors :D
+!URxvt*background:       #170F0D
+!URxvt*foreground:       #746C48
+!URxvt*cursorColor:      #6666CC
+!URxvt*colorIT:			#C8B984
+!URxvt*colorBD:          #C8B984
+!URxvt*colorUL:			#908F32
+
+!URxvt*color0:           #392925
+!URxvt*color8:           #544B2E
+
+!URxvt*color1:           #98724C
+!URxvt*color9:           #AF652F
+
+!URxvt*color2:           #908F32
+!URxvt*color10:          #C3C13D
+
+!URxvt*color3:           #AA964C
+!URxvt*color11:          #C8B55B
+
+!URxvt*color4:           #7B854E
+!URxvt*color12:          #70A16C
+
+!URxvt*color5:           #6B5644
+!URxvt*color13:          #98724C
+
+!URxvt*color6:           #5C5142
+!URxvt*color14:          #778725
+
+!URxvt*color7:           #C8B55B
+!URxvt*color15:          #E4DC8C
+
+! -- Desaturated
+!*background: #000000
+!*foreground: #bbbbbb
+! black
+!*color0: #000000
+! dark gray
+!*color8: #a9a9a9
+! dark red
+!*color1: #ff8080
+! red
+!*color9: #ffb3b3
+! dark green
+!*color2: #80ff80
+! green
+!*color10: #b3ffb3
+! dark yellow
+!*color3: #ffff80
+! yellow
+!*color11: #ffffb3
+! dark blue
+!*color4: #8080ff
+! blue
+!*color12: #b3b3ff
+! dark magenta
+!*color5: #ff80ff
+! magenta
+!*color13: #ffb3ff
+! dark cyan
+!*color6: #80ffff
+! cyan
+!*color14: #b3ffff
+! light gray
+!*color7: #d3d3d3
+! white
+!*color15: #ffffff
+
+! invisibone by baskerville
+! vim: set ft=xdefaults:
+
+!URxvt.background: #232323
+!URxvt.foreground: #A0A0A0
+
+!URxvt.colorBD:    #CFCFCF
+!URxvt.colorUL:    #A0A0A0
+!URxvt.colorIT:    #686868
+
+!BLK
+!URxvt.color0:     #303030
+!URxvt.color8:     #686868
+!RED
+!URxvt.color9:     #FFA7DA
+!URxvt.color1:     #D370A3
+!GRN
+!URxvt.color10:    #A3D572
+!URxvt.color2:     #6D9E3F
+!BLU
+!URxvt.color12:    #98CBFE
+!URxvt.color4:     #6095C5
+!YEL
+!URxvt.color11:    #EFBD8B
+!URxvt.color3:     #B58858
+!CYN
+!URxvt.color14:    #75DAA9
+!URxvt.color6:     #3BA275
+!MAG
+!URxvt.color13:    #E5B0FF
+!URxvt.color5:     #AC7BDE
+!WHT
+!URxvt.color7:     #CFCFCF
+!URxvt.color15:    #FFFFFF
+
+! -- Muzieca's colors
+! -- black
+!URxvt*color0: #111111
+! -- red
+!URxvt*color1: #CC5555
+! -- green
+!URxvt*color2: #66BB88
+! -- yellow
+!URxvt*color3: #CC8855
+! -- blue
+!URxvt*color4: #6688BB
+! -- purple
+!URxvt*color5: #CC5588
+! -- cyan
+!URxvt*color6: #66BBBB
+! -- white
+!URxvt*color7: #BBBBBB
+! -- bright-black
+!URxvt*color8: #888888
+! -- bright-red
+!URxvt*color9: #FF8888
+! -- bright-green
+!URxvt*color10: #99EEBB
+! -- bright-yellow
+!URxvt*color11: #FFBB88
+! -- bright-blue
+!URxvt*color12: #99BBEE
+! -- bright-purple
+!URxvt*color13: #FF88BB
+! -- bright-cyan
+!URxvt*color15: #99EEEE
+! -- bright-white
+!URxvt*color15: #EEEEEE
+! -- Foregound & background
+!URxvt*foreground: #B9B9B9
+!URxvt*background: #12171D
+
+! -- Technicolor II
+! -- black
+!URxvt*color0: #000000
+! -- red
+!URxvt*color1: #CC1A44
+! -- green
+!URxvt*color2: #86BE51
+! -- yellow
+!URxvt*color3: #9ba527
+! -- blue
+!URxvt*color4: #3b7b9c
+! -- purple
+!URxvt*color5: #A6397A
+! -- cyan
+!URxvt*color6: #42abc3
+! -- white
+!URxvt*color7: #E9E9E9
+! -- bright-black
+!URxvt*color8: #555753
+! -- bright-red
+!URxvt*color9: #D43B5F
+! -- bright-green
+!URxvt*color10: #a6df36
+! -- bright-yellow
+!URxvt*color11: #d5e055
+! -- bright-blue
+!URxvt*color12: #6495ed
+! -- bright-purple
+!URxvt*color13: #8963B9
+! -- bright-cyan
+!URxvt*color14: #76daf1
+! -- bright-white
+!URxvt*color15: #c3c2c5
+! -- Foreground & background
+!URxvt*foreground: #757575
+!URxvt*background: #121212
+
+! Xfontsel -----------------------
+xfontsel*background: #121212
+xfontsel*foreground: #ce5666
