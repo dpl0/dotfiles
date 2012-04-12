@@ -136,7 +136,8 @@ set hlsearch
 set gdefault
 
 "No more backups
-set nobackup
+set backup
+set backupdir=~/.vim/backup
 
 "Add <leader><space> as shortcut to take away search highlight
 "Add tab as "%" (jump betwen {[()]}

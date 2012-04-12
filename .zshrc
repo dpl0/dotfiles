@@ -69,11 +69,11 @@ PROMPT="%{$fg[green]%}%d %{$reset_color%}
 RPROMPT="[%{$fg[red]%}%?%{$reset_color%}]"
 
 #Set locale
-export LANG=en_US.ISO8859-15
-export LC_CTYPE=es_ES.ISO8859-15
-export LC_COLLATE=es_ES.ISO8859-15
-export LC_TIME=es_ES.ISO8859-15
-export LC_NUMERIC=es_ES.ISO8859-15
-export LC_MONETARY=es_ES.ISO8859-15
-export LC_MESSAGES=en_US.ISO8859-15
-export MM_CHARSET=es_ES.ISO8859-15
+export LANG=en_US.UTF-8
+export LC_CTYPE=es_ES.UTF-8
+export LC_COLLATE=es_ES.UTF-8
+export LC_TIME=es_ES.UTF-8
+export LC_NUMERIC=es_ES.UTF-8
+export LC_MONETARY=es_ES.UTF-8
+export LC_MESSAGES=en_US.UTF-8
+export MM_CHARSET=es_ES.UTF-8

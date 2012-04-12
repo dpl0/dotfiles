@@ -1,5 +1,8 @@
 #!/bin/sh
 
+export LANG=en_US.UTF-8
+export LC_CTYPE=es_ES.UTF-8
+
 #xcompmgr &
 xrdb -merge $HOME/.Xresources &
 eval `cat ~/.fehbg` &
