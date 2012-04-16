@@ -1,0 +1,42 @@
+background yes
+cpu_avg_samples 1
+double_buffer yes
+no_buffers no
+total_run_times 0
+update_interval 1.0
+
+own_window no
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_transparent no
+own_window_type panel
+
+alignment bottom_middle
+draw_borders no
+draw_graph_borders no
+draw_outline no
+draw_shades no
+gap_x 0
+gap_y 0
+maximum_width 1270 
+minimum_size 1270 1 
+
+format_human_readable yes
+override_utf8_locale yes
+short_units yes
+uppercase no
+use_xft yes
+xftalpha 1
+xftfont Terminus:size= 6
+
+color0 000000
+color1 ffffff
+color2 1e1e1e
+color3 44832A#A5B81E
+default_color 666666
+default_outline_color ffffff
+default_shade_color 000000
+own_window_colour 000000
+
+TEXT
+${goto 3}${color3}KERNEL: $color${kernel}$color3${goto 173}CPU: $color${cpu cpu0}%${goto 343}${color3}RAM: $color${memperc}%${goto 513}${color3}SWAP: $color${swapperc}%${goto 683}${color3}PROCESSES: $color${processes} (${running_processes})${goto 853}${color3}/: $color${fs_free /} (${fs_size /})${goto 1023}${color3}/home: $color${fs_free /home} (${fs_size /home})${goto 1193}${color3}UPDATES: $color$
+${goto 3}${color3}USER: ${color}athos${goto 173}${color3}HOST: $color${nodename}${goto 343}${color3}UPTIME: $color${uptime_short}${goto 513}${color3}LAN IP: $color${addr wlan0}${goto 683}${color3}ESSID: $color${wireless_essid wlan0}${goto 853}${color3}MAC: $color${wireless_ap wlan0}${goto 1023}${color3}LINK QUALITY: $color${wireless_link_qual_perc wlan0}%${goto 1193}${color3}DOWN: $color${downspeed wlan0}${goto 1278}${color3}UP: $color${upspeed wlan0}
