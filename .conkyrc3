@@ -1,20 +1,17 @@
 # Sticker Conky by Skinwalker aka Prem K. Murugan
 # http://skinwalker.wordpress.com
-# Optimized for Netbook resolution 1024x600
 
 own_window yes
-own_window_colour 000000
-own_window_transparent no
+own_window_colour 18191b
 own_window_type override
-own_window_transparent no
+own_window_transparent yes
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 double_buffer yes
 use_spacer right
-use_xft yes
-xftfont standard 07_57 caps:size=6
+font -*-terminus-*-*-*-*-12-*-*-*-*-*-iso8859-15
 alignment top_right
-gap_y 30
-gap_x 18
+gap_y 39
+gap_x 24
 
 # --- Colours, Sizes, Fonts & Margins --- #
 update_interval 1.0
@@ -22,16 +19,16 @@ minimum_size 110 3
 stippled_borders 3
 border_margin 5
 border_width 6
-default_color 4e4e4e
+default_color a5a8a9
 
 # --- Text --- #
 draw_outline no
 draw_borders no
 uppercase no
-draw_shades yes
+draw_shades no
 
 TEXT
-${color ba0102}FreeBSD ${color 665c64}- ${color ba5401}The Power To Serve${color bab501}${hr 1}
-${color 0088cc}${time %A} ${time %e} ${time %B} ${time %G}${alignr} ${time %H:%M:%S}
-${color 01ba7d}Machine$color $nodename ${alignr} ${color b7e234}Uptime$color $uptime
-${color ba0102}Kernel$color $kernel ${alignr} ${color 34e2e2}Arch$color $machine
+${color b5494a}FreeBSD ${color 665c64}- ${color b57f49}The Power To Serve${color 659b49}${hr 1}
+${color 207fb8}${time %A} ${time %e} ${time %B} ${time %G}${alignr} ${time %H:%M:%S}
+${color 60b549}Machine$color $nodename ${alignr} ${color afb549}Uptime$color $uptime
+${color b5494a}Kernel$color $kernel ${alignr} ${color 49a8b5}Arch$color $machine

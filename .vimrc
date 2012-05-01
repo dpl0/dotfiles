@@ -12,7 +12,7 @@ call pathogen#infect()
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-colorscheme mustang
+colorscheme jellybeans2
 set autoindent
 set number
 
@@ -119,7 +119,8 @@ set t_Co=256
 
 " This is for vertical indenting
 set list
-set listchars=tab:>\  
+set listchars=eol:¬,tab:▸\ ,trail:·
+
 
 "Nice menu when pressing tab
 set wildmenu
