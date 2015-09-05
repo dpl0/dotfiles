@@ -1,39 +1,70 @@
-! Xresources -----------------------------------------------------------------
-! xterm ----------------------------------------------------------------------
-.colorIT:			#47D6B5
-.colorBD:			#47D6B5
-.colorUL:			#C03652
-*cursorColor:		#C1521A
-*background:		#000000
-*foreground:		#A5A8A9
-! urxvt------------------------------------------------------------------------ 
-URxvt*termname:			rxvt-256color
-URxvt*scrollBar:		true
-URxvt*scrollstyle:		plain
-URxvt*scrollColor:		#404040
-!URxvt*font:				-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-!URxvt*boldFont:			-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*
-URxvt*font: xft:DejaVu Sans Mono:pixelsize=10
-URxvt*boldFont: xft:DejaVu Sans Mono:Bold:pixelsize=10
-!URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=10
+xterm*foreground: #aaa
+xterm*background: #000
 
-!Italic, Bold, Underlined
-URxvt.colorIT:			#ffffff
-URxvt.colorBD:			#ffffff
-URxvt.colorUL:			#00a8a8
-!URxvt*cursorColor:		#C1521A
-!URxvt*cursorColor:		#97ff00
-URxvt*cursorColor:		#000000
-URxvt*cursorBlink:		true
-URxvt*cursorUnderline:	true
-URxvt*background:		#000000
-URxvt*foreground:		#A5A8A9
-!URxvt*foreground:		#EEEEEE
+!*font: -*-proggycleansz-*-*-*-*-*-*-*-*-*-*-*-*
+!*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
+xterm*faceName:  ProggyTinyTTSZ:style=Regular:size=12
+!xterm*faceName:  Terminus:style=Regular:size=12
 
-URxvt.borderless:		true
-!URxvt*transparent:		true
-!URxvt*tintColor:		white
-!URxvt.shading:			0
+xterm*cursorColor: #888
+xterm*cursorBlink: on
+
+! Forbid bold font face.
+xterm*colorBDMode: true
+xterm*colorBD: #00CDCD
+xterm*allowBoldBonts: false
+
+! Do not underline text.
+xterm*colorULMode: true
+xterm*colorUL: #e4e4e4
+
+!Gutterslob colors
+!black - 474747
+xterm*color0:  #000000 
+xterm*color8:  #606060
+!red
+xterm*color1:  #A06760
+xterm*color9:  #CC928D
+!green
+xterm*color2:  #60A067
+xterm*color10: #8DCC92
+!yellow
+!URxvt*color3:  #A08760
+xterm*color3:  #A09E60
+xterm*color11: #CCB28D
+!blue
+xterm*color4:  #607AA1
+xterm*color12: #8DA7CC
+!magenta
+xterm*color5:  #A1619A
+xterm*color13: #C983C1
+!cyan
+xterm*color6:  #559DA1
+xterm*color14: #7EC6CA
+!white
+xterm*color7:  #C2C2C2
+xterm*color15: #FFFFFF
+
+
+! rxvt-unicode
+URxvt*jumpScroll: true
+URxvt*termName: xterm
+URxvt*scrollBar: false
+
+URxvt*foreground: #aaa
+URxvt*background: #000
+
+!URxvt*font: xft:ProggyTinyTT:style=Regular:size=12, fixed
+URxvt*font: xft:Terminus:style=Regular:size=8, fixed
+! Forbid bold/italic font.
+URxvt*boldFont:
+URxvt*italicFont:
+URxvt*boldItalicFont:
+URxvt*colorBD: #fff
+URxvt*colorUL: #eee
+
+URxvt*cursorColor: #888
+URxvt*cursorBlink: on
 
 !Gutterslob colors
 !black - 474747
@@ -49,7 +80,7 @@ URxvt*color10: #8DCC92
 !URxvt*color3:  #A08760
 URxvt*color3:  #A09E60
 URxvt*color11: #CCB28D
-!blue 
+!blue
 URxvt*color4:  #607AA1
 URxvt*color12: #8DA7CC
 !magenta
@@ -61,191 +92,3 @@ URxvt*color14: #7EC6CA
 !white
 URxvt*color7:  #C2C2C2
 URxvt*color15: #FFFFFF
-!Foregound/Background
-URxvt*foreground: #A2A2A2
-URxvt*background: #000000
-
-!IR_Black
-!URxvt*color0:	#4E4E4E
-!URxvt*color8:	#7C7C7C
-!URxvt*color1:	#FF6C60
-!URxvt*color9:	#FFB6B0
-!URxvt*color2:	#A8FF60
-!URxvt*color10:	#CEFFAB
-!!URxvt*color3:	#FFFFB6
-!!URxvt*color11:	#FFFFCB
-!URxvt*color3:	#E7E738
-!URxvt*color11:	#FAFA6F
-!!URxvt*color4:	#96CBFE
-!!URxvt*color12:	#B5DCFE
-!URxvt*color4:	#5BA8F2
-!URxvt*color12:	#8DC4FA
-!URxvt*color5:	#FF73FD
-!URxvt*color13:	#FF9CFE
-!URxvt*color6:	#C6C5FE
-!URxvt*color14:	#DFDFFE
-!URxvt*color7:	#EEEEEE
-
-
-! -- Desaturated
-!*background: #000000
-!*foreground: #bbbbbb
-! black
-!*color0: #000000
-! dark gray
-!*color8: #a9a9a9
-! dark red
-!*color1: #ff8080
-! red
-!*color9: #ffb3b3
-! dark green
-!*color2: #80ff80
-! green
-!*color10: #b3ffb3
-! dark yellow
-!*color3: #ffff80
-! yellow
-!*color11: #ffffb3
-! dark blue
-!*color4: #8080ff
-! blue
-!*color12: #b3b3ff
-! dark magenta
-!*color5: #ff80ff
-! magenta
-!*color13: #ffb3ff
-! dark cyan
-!*color6: #80ffff
-! cyan
-!*color14: #b3ffff
-! light gray
-!*color7: #d3d3d3
-! white
-!*color15: #ffffff
-
-! -- Muzieca's colors
-! -- black
-!URxvt*color0: #111111
-! -- red
-!URxvt*color1: #CC5555
-! -- green
-!URxvt*color2: #66BB88
-! -- yellow
-!URxvt*color3: #CC8855
-! -- blue
-!URxvt*color4: #6688BB
-! -- purple
-!URxvt*color5: #CC5588
-! -- cyan
-!URxvt*color6: #66BBBB
-! -- white
-!URxvt*color7: #BBBBBB
-! -- bright-black
-!URxvt*color8: #888888
-! -- bright-red
-!URxvt*color9: #FF8888
-! -- bright-green
-!URxvt*color10: #99EEBB
-! -- bright-yellow
-!URxvt*color11: #FFBB88
-! -- bright-blue
-!URxvt*color12: #99BBEE
-! -- bright-purple
-!URxvt*color13: #FF88BB
-! -- bright-cyan
-!URxvt*color15: #99EEEE
-! -- bright-white
-!URxvt*color15: #EEEEEE
-! -- Foregound & background
-!URxvt*foreground: #B9B9B9
-!URxvt*background: #12171D
-
-! -- Technicolor II
-! -- black
-!URxvt*color0: #000000
-! -- red
-!URxvt*color1: #CC1A44
-! -- green
-!URxvt*color2: #86BE51
-! -- yellow
-!URxvt*color3: #9ba527
-! -- blue
-!URxvt*color4: #3b7b9c
-! -- purple
-!URxvt*color5: #A6397A
-! -- cyan
-!URxvt*color6: #42abc3
-! -- white
-!URxvt*color7: #E9E9E9
-! -- bright-black
-!URxvt*color8: #555753
-! -- bright-red
-!URxvt*color9: #D43B5F
-! -- bright-green
-!URxvt*color10: #a6df36
-! -- bright-yellow
-!URxvt*color11: #d5e055
-! -- bright-blue
-!URxvt*color12: #6495ed
-! -- bright-purple
-!URxvt*color13: #8963B9
-! -- bright-cyan
-!URxvt*color14: #76daf1
-! -- bright-white
-!URxvt*color15: #c3c2c5
-! -- Foreground & background
-!URxvt*foreground: #757575
-!URxvt*background: #121212
-
-! Xfontsel -----------------------
-xfontsel*background: #121212
-xfontsel*foreground: #ce5666
-
-
-
-! Xcalc --------------------------
-
-xcalc*geometry:                        200x275
-xcalc.ti.bevel.background:             #111111
-xcalc.ti.bevel.screen.background:      #000000
-xcalc.ti.bevel.screen.DEG.background:  #000000
-xcalc.ti.bevel.screen.DEG.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.GRAD.background: #000000
-xcalc.ti.bevel.screen.GRAD.foreground: LightSeaGreen
-xcalc.ti.bevel.screen.RAD.background:  #000000
-xcalc.ti.bevel.screen.RAD.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.INV.background:  #000000
-xcalc.ti.bevel.screen.INV.foreground:  Red
-xcalc.ti.bevel.screen.LCD.background:  #000000
-xcalc.ti.bevel.screen.LCD.foreground:  LightSeaGreen
-xcalc.ti.bevel.screen.LCD.shadowWidth: 0
-xcalc.ti.bevel.screen.M.background:    #000000
-xcalc.ti.bevel.screen.M.foreground:    LightSeaGreen
-xcalc.ti.bevel.screen.P.background:    #000000
-xcalc.ti.bevel.screen.P.foreground:    Yellow
-xcalc.ti.Command.foreground:  White
-xcalc.ti.Command.background:  #777777
-xcalc.ti.button5.background:  Orange3
-xcalc.ti.button19.background: #611161
-xcalc.ti.button18.background: #611161
-xcalc.ti.button20.background: #611111
-!uncomment to change label on division button
-!!xcalc.ti.button20.label:      /
-!xcalc.ti.button25.background: #722222
-!xcalc.ti.button30.background: #833333
-!xcalc.ti.button35.background: #944444
-!xcalc.ti.button40.background: #a55555
-!xcalc.ti.button22.background: #222262
-!xcalc.ti.button23.background: #222262
-!xcalc.ti.button24.background: #222272
-!xcalc.ti.button27.background: #333373
-!xcalc.ti.button28.background: #333373
-!xcalc.ti.button29.background: #333373
-!xcalc.ti.button32.background: #444484
-!xcalc.ti.button33.background: #444484
-!xcalc.ti.button34.background: #444484
-!xcalc.ti.button37.background: #555595
-!xcalc.ti.button38.background: #555595
-!xcalc.ti.button39.background: #555595
-!XCalc*Cursor:                 hand2
-!XCalc*ShapeStyle:             rectangle
