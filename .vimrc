@@ -113,7 +113,6 @@ hi ColorColumn ctermbg=235 guibg=#2c2d27
 
 "256 Colors
 set t_Co=256
-colorscheme jellybeans
 syntax on
 
 "set tabulations to 8 spaces
@@ -130,28 +129,21 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-Plugin 'L9'
-" Git plugin not hosted on GitHub
 "Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Avoid a name conflict with L9
-"Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'tpope/vim-commentary'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'wincent/command-t'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'bling/vim-airline'
 Plugin 'farseer90718/vim-taskwarrior'
-" I need to install cscope_maps as well (official webpage).
+Plugin 'nanotech/jellybeans.vim'
+Plugin 'wolfpython/cscope_map.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -167,3 +159,5 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+colorscheme jellybeans
