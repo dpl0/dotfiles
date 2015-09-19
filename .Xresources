@@ -3,7 +3,7 @@ xterm*background: #000
 
 !*font: -*-proggycleansz-*-*-*-*-*-*-*-*-*-*-*-*
 !*font: -*-terminus-medium-*-*-*-14-*-*-*-*-*-*-*
-xterm*faceName:  ProggyTinyTTSZ:style=Regular:size=12
+xterm*faceName:  ProggyTinyTTSZ:style=Regular:size=8
 !xterm*faceName:  Terminus:style=Regular:size=12
 
 xterm*cursorColor: #888
@@ -54,8 +54,8 @@ URxvt*scrollBar: false
 URxvt*foreground: #aaa
 URxvt*background: #000
 
-!URxvt*font: xft:ProggyTinyTT:style=Regular:size=12, fixed
-URxvt*font: xft:Terminus:style=Regular:size=8, fixed
+!URxvt*font: xft:ProggyTinyTTSZ:style=Regular:size=8, fixed
+URxvt*font: xft:Terminus:style=Regular:size=6, fixed
 ! Forbid bold/italic font.
 URxvt*boldFont:
 URxvt*italicFont:
@@ -92,3 +92,24 @@ URxvt*color14: #7EC6CA
 !white
 URxvt*color7:  #C2C2C2
 URxvt*color15: #FFFFFF
+
+!Monocolor
+URxvt*cursorColor: #55ff55
+URxvt*foreground:  #55ff55
+URxvt*background:  #000000
+URxvt*color0:      #55ff55
+URxvt*color8:      #55ff55
+URxvt*color1:      #55ff55
+URxvt*color9:      #55ff55
+URxvt*color2:      #55ff55
+URxvt*color10:     #55ff55
+URxvt*color3:      #55ff55
+URxvt*color11:     #55ff55
+URxvt*color4:      #55ff55
+URxvt*color12:     #55ff55
+URxvt*color5:      #55ff55
+URxvt*color13:     #55ff55
+URxvt*color6:      #55ff55
+URxvt*color14:     #55ff55
+URxvt*color7:      #55ff55
+URxvt*color15:     #55ff55

@@ -25,12 +25,17 @@ alias tma="tm attach -t"
 alias tm="tmux -2u"
 alias feh="feh -. -Z"
 alias less="less -R"
+alias wscan "sudo ifconfig wlan0 list scan"
+
 alias tsc="ping google.com"
-alias remount="sudo mount -o remount,exec /dev/mmcblk1p1 /media/removable/SD"
+alias triton="ssh -N -f -L 2222:arctic.cmima.csic.es:22 peyrolon@triton.cmima.csic.es"
+alias arctic="ssh peyrolon@localhost -p 2222"
+alias vm="ssh -i ~/.ssh/netperf dpl@107.191.46.83"
+alias vmftp="sftp -i ~/.ssh/netperf dpl@107.191.46.83"
+alias zoo="ssh -i ~/.ssh/netperf dpl@zoo.FreeBSD.org"
 
 export PATH="$HOME/bin:$PATH"
-export RISCV="$HOME/uni/MA/rv-toolchain"
-export PATH="$PATH:$HOME/bin:$RISCV/bin:$RISCV/riscv/bin"
+export PATH="$PATH:$HOME/bin"
 
 export BLOCKSIZE=K
 export EDITOR=vim
