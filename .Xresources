@@ -93,12 +93,12 @@ URxvt*color14: #7EC6CA
 URxvt*color7:  #C2C2C2
 URxvt*color15: #FFFFFF
 
-!Monocolor
+! Monochromed
 URxvt*cursorColor: #55ff55
 URxvt*foreground:  #55ff55
 URxvt*background:  #000000
-URxvt*color0:      #55ff55
-URxvt*color8:      #55ff55
+URxvt*color0:      #000000
+URxvt*color8:      #000000
 URxvt*color1:      #55ff55
 URxvt*color9:      #55ff55
 URxvt*color2:      #55ff55
