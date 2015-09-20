@@ -99,6 +99,8 @@ URxvt*color15: #FFFFFF
 URxvt*cursorColor: #b98000
 URxvt*foreground:  #b98000
 URxvt*background:  #000000
+URxvt*colorBD:     #ffc440
+URxvt*colorUL:     #ffc440
 URxvt*color0:      #000000
 URxvt*color8:      #000000
 URxvt*color1:      #b98000
@@ -113,5 +115,5 @@ URxvt*color5:      #b98000
 URxvt*color13:     #b98000
 URxvt*color6:      #b98000
 URxvt*color14:     #b98000
-URxvt*color7:      #b98000
-URxvt*color15:     #b98000
+URxvt*color7:      #ffc440
+URxvt*color15:     #ffc440

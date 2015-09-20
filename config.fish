@@ -45,7 +45,8 @@ function syncdotfiles --description "Sync dotfiles folder with system dotfiles"
 	set -x dotfiles ~/os/dotfiles/
 	set -x files ~/.Xresources ~/.Xmodmap ~/.spectrwm.conf ~/.tmux.conf \
 		~/.vimrc ~/.xinitrc ~/.xxxterm.conf ~/.zshrc \
-		~/.config/fish/config.fish ~/.config/zathura/zathurarc
+		~/.config/fish/config.fish ~/.config/zathura/zathurarc \
+		~/.vitunes/vitunes.conf
 	cp $files $dotfiles
 	pushd $dotfiles
 	git add -A; git commit; git push
