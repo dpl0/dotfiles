@@ -47,4 +47,7 @@ function syncdotfiles --description "Sync dotfiles folder with system dotfiles"
 		~/.vimrc ~/.xinitrc ~/.xxxterm.conf ~/.zshrc \
 		~/.config/fish/config.fish ~/.config/zathura/zathurarc
 	cp $files $dotfiles
+	pushd $dotfiles
+	git add -A; git commit; git push
+	popd
 end

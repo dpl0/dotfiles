@@ -1,2 +1,3 @@
-set recolor-darkcolor "#55ff55"
+#set recolor-darkcolor "#55ff55"
+set recolor-darkcolor "#b98000"
 set recolor true
