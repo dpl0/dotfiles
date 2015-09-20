@@ -32,6 +32,9 @@ alias t "task"
 alias tin "task add +in"
 alias tadd "task add +next"
 
+# Remove greeting
+set -xg fish_greeting ""
+
 function tick --description "Store thing in tickle file."
 	set deadline $argv[1]
 	task add +in +tickle wait:$deadline $argv[2..-1]
