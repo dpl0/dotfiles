@@ -34,13 +34,15 @@ alias vm="ssh -i ~/.ssh/netperf dpl@107.191.46.83"
 alias vmftp="sftp -i ~/.ssh/netperf dpl@107.191.46.83"
 alias zoo="ssh -i ~/.ssh/netperf dpl@zoo.FreeBSD.org"
 
-export PATH="$HOME/bin:$PATH"
-export PATH="$PATH:$HOME/bin"
 
 export BLOCKSIZE=K
 export EDITOR=vim
 export PAGER=less
 export PLAN9=/usr/local/plan9/
+export GOROOT=/usr/local/go/
+export GOPATH=$HOME/os/go
+export PATH="$HOME/bin:$PATH:$GOROOT/bin"
+
 export LC_CTYPE="en_US.UTF-8"
 
 autoload -U colors && colors

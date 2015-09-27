@@ -3,8 +3,10 @@ set -xU EDITOR vim
 set -xU PAGER less
 set -xU PLAN9 /usr/local/plan9/
 set -xU LC_CTYPE "en_US.UTF-8"
+set -xU GOROOT /usr/local/go/
+set -xU GOPATH $HOME/os/go
 
-set -xU PATH "$HOME/bin" $PATH "$PLAN9/bin"
+set -xU PATH "$HOME/bin" $PATH "$PLAN9/bin" "$GOROOT/bin"
 
 alias j "jobs -l"
 alias ls "ls -GF"
