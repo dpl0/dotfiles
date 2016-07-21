@@ -1,31 +1,64 @@
 set -xU BLOCKSIZE K
 set -xU EDITOR vim
 set -xU PAGER less
-set -xU PLAN9 /usr/local/plan9/
 set -xU LC_CTYPE "en_US.UTF-8"
-set -xU GOROOT /usr/local/go/
-set -xU GOPATH $HOME/os/go
+set -xU GOROOT /usr/lib/go
+set -xU GOPATH $HOME/dev/gopath
 
-set -xU PATH "$HOME/bin" $PATH "$PLAN9/bin" "$GOROOT/bin"
+set -xU CCACHEPATH /usr/lib/ccache
+set -xU PLAN9PATH /usr/local/plan9/bin
+set -xU RUSTPATH $HOME/.cargo/bin
+set -xU CABALPATH $HOME/.cabal/bin
+set  PATH "$HOME/bin" $CCACHEPATH $RUSTPATH $PATH "$GOROOT/bin"
 
-alias j "jobs -l"
-alias ls "ls -GF"
-alias la "ls -a"
-alias lf "ls -A"
-alias ll "ls -lA"
-
-alias tma "tm attach -t"
-alias tm "tmux -2u"
-alias feh "feh -. -Z"
 alias less "less -R"
-alias wscan "sudo ifconfig wlan0 list scan"
+alias ls 'ls -F --color=auto'
+# alias ls "ls -GF"
 
+alias tm "tmux -2u"
+alias tma "tm attach -t"
+
+alias feh "feh -. -Z"
+alias slideshow 'feh -. -F -D7'
+alias images 'feh -. -F -z -D7'
+
+
+# Networking
+alias wscan "sudo ifconfig wlan0 list scan"
 alias tsc "ping google.com"
-alias triton "ssh -N -f -L 2222:arctic.cmima.csic.es:22 peyrolon@triton.cmima.csic.es"
-alias arctic "ssh peyrolon@localhost -p 2222"
 alias vm "ssh -i ~/.ssh/netperf  dpl@107.191.46.83"
 alias vmftp "sftp -i ~/.ssh/netperf  dpl@107.191.46.83"
 alias zoo "ssh -i ~/.ssh/netperf  dpl@zoo.FreeBSD.org"
+
+# Useful places
+alias tmp 'cd /home/dpl/tmp'
+alias dacomp 'cd /home/dpl/dev/DACOMPILER'
+alias davm 'cd /home/dpl/dev/DAVM'
+alias compiler 'cd /home/dpl/dev/compiler'
+
+#
+# Work related
+#
+set -xU PARAVER /home/dpl/dev/OmpSs/wxparaver-4.6.0-linux86_64/bin
+set -xU MCXX /home/dpl/dev/OmpSs/mcxx-install/bin
+set PATH $PARAVER $MCXX $PATH
+
+set -xU MCXXB /home/dpl/dev/OmpSs/mcxx-build
+set -xU MCXXS /home/dpl/dev/OmpSs/mcxx/src
+
+alias reinstallmcxx 'mcxxb; make -j4 install; cd -'
+alias vim 'nvim'
+
+alias fmt 'cd /home/dpl/dev/FMT'
+alias ompss 'cd /home/dpl/dev/OmpSs'
+alias mcxxi 'cd /home/dpl/dev/OmpSs/mcxx-install'
+alias mcxxs 'cd /home/dpl/dev/OmpSs/mcxx/src'
+alias mcxxb 'cd /home/dpl/dev/OmpSs/mcxx-build'
+alias nanox 'cd /home/dpl/dev/OmpSs/nanox'
+alias nanos6 'cd /home/dpl/dev/OmpSs/nanos6'
+
+alias minotauro 'ssh  bsc15224@mt1.bsc.es'
+alias marenostrum 'ssh  bsc15224@mn1.bsc.es'
 
 #
 # GTD w/ taskwarrior.
