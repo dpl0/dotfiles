@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name="Autostart!"
+GenericName="Startup stuff"
+Comment="Synclient mostly"
+Exec=/home/dpl/bin/autostart.sh
+Terminal=false
+Type=Application
+X-Gnome-Autostart=true
